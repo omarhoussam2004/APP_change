@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.changeoriginal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Changeoriginal">
+
+        <!-- On démarre directement sur autoActivity (page de connexion) -->
+        <activity
+            android:name=".activite.autoActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activite.RegistreActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activite.HomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activite.p1Activity"
+            android:exported="false" />
+
+        <!-- Commenté car non implémenté dans le code partagé
+        <activity
+            android:name=".activite.splashscreenActivity"
+            android:exported="false" /> -->
+
+    </application>
+
+</manifest>
